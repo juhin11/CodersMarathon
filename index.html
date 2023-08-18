@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+
+    <!-- * ---------------------------------------------------------------PARTICLE JS--------------------------------------------------------------- -->
+
+    <div id="particles-js"></div>
+
+
+    <!-- * ---------------------------------------------------------------NAVBAR--------------------------------------------------------------- -->
+    <nav >
+        <i id="leftIcon" class="fa-solid fa-bars"></i>
+        <h2>Coders Club</h2>
+        <i id="rightIcon" class="fa-solid fa-bars"></i>
+    </nav>
+
+    <!-- *---------------------------------------------------------------LEFT SIDE MENU--------------------------------------------------------------- -->
+    <div class="side-menu left-menu left-hide">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <!-- * ---------------------------------------------------------------RIGHT SIDE MENU--------------------------------------------------------------- -->
+    <div class="side-menu right-menu right-hide">
+        <ul>
+            <li>Home 1</li>
+            <li>About 2</li>
+            <li>Contact 3</li>
+        </ul>
+    </div>
+
+    <!-- * ---------------------------------------------------------------SLIDER--------------------------------------------------------------- -->
+    <div class="slidder">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/slider1.jpg" />
+                <div class="side-text">
+                    <h1>Heading 1</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, id sint velit harum veniam perspiciatis architecto similique quod ut alias, ex modi magnam. Vitae optio quas, consectetur omnis voluptatibus commodi!</p>
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <img src="assets/img/slider2.jpg" />
+                <div class="side-text">
+                    <h1>Heading 2</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, id sint velit harum veniam perspiciatis architecto similique quod ut alias, ex modi magnam. Vitae optio quas, consectetur omnis voluptatibus commodi!</p>
+                </div>  
+            </div>
+              <div class="swiper-slide">
+                <img src="assets/img/slider3.jpg" />
+                <div class="side-text">
+                    <h1>Heading 3</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, id sint velit harum veniam perspiciatis architecto similique quod ut alias, ex modi magnam. Vitae optio quas, consectetur omnis voluptatibus commodi!</p>
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <img src="assets/img/slider4.jpg" />
+                <div class="side-text">
+                    <h1>Heading 4</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, id sint velit harum veniam perspiciatis architecto similique quod ut alias, ex modi magnam. Vitae optio quas, consectetur omnis voluptatibus commodi!</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+    <!-- * --------------------------------------------------------------- YOUTUBE VIDEO --------------------------------------------------------------- -->
+    <div class="youtube-video">
+        <div class="y-card">
+            <div class="box">
+                <iframe width="930" height="523" src="https://www.youtube.com/embed/m-i2JBtG4FE" title="setup a FREE VPN server in the cloud (AWS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="y-card">
+            <div class="box">
+                <<iframe width="560" height="315" src="https://www.youtube.com/embed/dl00fOOYLOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+    <div class="tab-button">
+        <button id="leftTab" class="tab">tab 1</button>
+        <button id="rightTab" class="tab">tab 2</button>
+    </div>
+
+    <!-- *---------------------------------------------------------------TAB MENU--------------------------------------------------------------- -->
+    <div class="tab-container">
+        <div class="option">
+            <button id="tabformBtn" class="op-btn">form</button>
+            <button id="tabtextBtn" class="op-btn">text</button>
+            <button id="tabimageBtn" class="op-btn">image</button>
+            <button id="tabvideoBtn" class="op-btn">video</button>
+        </div>
+        <div class="content">
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="phone">
+                    <input type="text" placeholder="message">
+                    <button class="tab">submit</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    <!-- *---------------------------------------------------------------FOOTER--------------------------------------------------------------- -->
+    <footer>
+        <div class="footer">
+            <p>© 2021 All Rights Reserved</p>
+            <div class="f-btn">
+                <button class="tab">terms</button>
+                <button class="tab">policy</button>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script src="assets/particle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</html>

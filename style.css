@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,700;1,800;1,900&display=swap');
+:root {
+    --swiper-theme-color: #007aff;
+    --light-bg: #fcf1da9e;
+    --light-bg-opaque: #ffd6a7;
+    --accent: #f47a2c;
+    --bg: #ffffff;
+    --secondary : #000;
+    --font-body : 1rem;
+    --font-heading: 1.5 rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+  background: #C6FFDD; 
+  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+}
+
+#particles-js{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  overflow-y: hidden;
+  z-index: -1;
+}
+
+/* -----------------------------------------------------------NAVBAR----------------------------------------------------------- */
+nav{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav i{
+    background-color: var(--accent);
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 0;    
+    color: var(--bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: .5rem;
+}
+nav i:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 0;
+}
+nav i:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 0;
+}
+nav h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/* -----------------------------------------------------------SIDE MENU----------------------------------------------------------- */
+
+.side-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 101;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 200ms;
+}
+
+.side-menu>ul{
+  text-align: center;
+  font-size: 1.25rem;
+}
+.side-menu>ul>li{
+  cursor: pointer;
+  margin-top: .5rem;
+  font-weight: 500;
+}
+.left-hide{
+  transform: translateX(-100vw);
+}
+.right-hide{
+  transform: translateX(100vw);
+}
+
+
+/* -----------------------------------------------------------SLIDER----------------------------------------------------------- */
+
+.swiper {
+    width: calc(100vw - 5rem);
+    margin: 0 2rem;
+    margin-top: calc(10vh + 1rem);
+    height: 70vh;
+    overflow-y: hidden;
+    box-shadow: var(--accent);
+    border-radius: .5rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+    position: relative;
+  }
+  .swiper-slide .side-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8716736694677871) 21%, rgba(0,0,0,0.7092086834733893) 52%, rgba(255,255,255,0) 100%);
+    z-index: 100;
+    color: var(--bg);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+/* -----------------------------------------------------------Youtube Video----------------------------------------------------------- */
+
+.youtube-video{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+.youtube-video iframe{
+    width: 70%;
+    height: 30vh;
+    border-radius: 1rem;
+}
+.y-card {
+    position: relative;
+    font-family: sans-serif;
+
+  }
+  
+  .y-card::before, .y-card::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+  }
+  
+  .y-card::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+  }
+  
+  .y-card::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+  }
+  
+  .y-card .box {
+    display: grid;
+    place-items: center;    
+    padding: 1rem;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(5);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+  }
+  
+  .y-card .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .y-card .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: .2rem;
+  }
+  
+  .y-card .box:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb768c;
+    border: 1px solid rgba(255, 255, 255, 0.654);
+  }
+
+  .tab-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  .tab {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.5em 1.5em 0.5em 1.2em;
+    color: var(--bg);
+    background: var(--accent);
+    background: linear-gradient(0deg, var(--accent) 0%, rgba(255, 95, 109, 1) 100%);
+    border: 2px solid var(--accent);
+    border-radius: 20em;
+    cursor: pointer;
+  }
+  
+  .tab:hover {
+    border-color: var(--bg);
+    box-shadow: 0 0.5em 1.5em -0.5em #bf5800;
+  }
+  
+  .tab:active {
+    box-shadow: 0 0.3em 1em -0.5em #bf5800;
+  }
+  .tab-container{
+    position: relative;
+    width: calc(100% - 4rem);
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(5);
+    overflow: unset !important;
+    }
+
+
+
+    /* ----------------------------------------------------------- TAB MENU----------------------------------------------------------- */
+
+  .option{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    overflow: visible;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .op-btn{
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.5em 1.2em;
+    color: var(--bg);
+    background: var(--accent);
+    background: linear-gradient(0deg, var(--accent) 0%, rgba(255, 95, 109, 1) 100%);
+    border: 2px solid var(--accent);
+    border-radius: 0.5em;
+    cursor: pointer;
+    min-width: 6rem;
+    text-align: center;
+  }
+  .content{
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  } 
+  .content>*{
+    width: auto;
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+  .content form input{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--accent);
+    outline: none;
+    background-color: transparent;
+    color: var(--secondary);
+  }
+
+  /* -----------------------------------------------------------FOOTER----------------------------------------------------------- */
+
+  footer{
+    padding: 2rem;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(5);
+    outline: 1px solid var(--bg);
+    text-align: center;
+  }
+  .f-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-left: auto;
+  }
+
+
+
+  @media screen and (max-width: 480px) {
+
+    nav h2{
+      font-size: 1rem !important;
+    }
+
+    .swiper{
+      height: unset;
+    }
+    .swiper-slide .side-text p{
+      font-size: .5rem;
+    }
+
+    .swiper-slide .side-text h1{
+      font-size: .8rem;
+    }
+    .youtube-video{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .youtube-video>div iframe{
+      height: unset !important;
+    }
+    .tab{
+      font-size: .7rem;
+    }
+    .op-btn{
+      font-size: .7rem;
+      min-width: 15vw;
+      margin: 0 .5rem;
+      padding: .5rem;
+      text-align: center;
+    }
+    .content form input{
+      padding: .25rem .5rem;
+    }
+    .content .text h2{
+      font-size: 1rem;
+    }
+    .content .text>p{
+      font-style: .8rem;
+    }
+    .content .image img{
+      width: 100%;
+    }
+    .content .video iframe{
+      width: 100%;
+      height: auto;
+    }
+
+  }
